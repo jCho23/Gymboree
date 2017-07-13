@@ -27,7 +27,11 @@ namespace Gymboree
 			app.Screenshot("App Launched");
 		}
 
-
+        [Test]
+        public void Repl()
+        {
+            app.Repl();
+        }
 
 		[Test]
 		public void FirstTest()
