@@ -36,6 +36,9 @@ namespace Gymboree
 		[Test]
 		public void FirstTest()
 		{
+            //The following command will reveal the URL for this app
+            //app.Query(x => x.WebView().Invoke("getUrl"))
+
 			Thread.Sleep(8000);
 			app.WaitForElement(x => x.Css("#search"), timeout: TimeSpan.FromSeconds(80));
 			app.Tap(x => x.Css("#search"));
